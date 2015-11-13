@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<link href="static/bootstrap.min.css" rel="stylesheet">
+<script src="static/angular.min.js"></script>
+<script src="static/jquery.min.js"></script>
+<script src="static/authenticate.js"></script>
+<link href="static/authentication.css" rel="stylesheet">
+<body ng-app = 'searchapp'>
+<div class = "table-responsive" ng-controller = 'searchController'>
+	<table class = "table table-hover table-bordered" style = "margin-left:100px; margin-top:100px; width:85%;">
+		<thead>
+			<tr>
+				<th>S.N0</th>
+				<th>Name</th>
+				<th>Email Id</th>
+				<th>Contact Number</th>
+				<th>Company Id</th>
+
+			</tr>
+		</thead>
+		<tbody>
+			<tr search-data info="users" ng-repeat = 'user in users.data'>
+				
+			</tr>
+		</tbody>
+	</table>
+
+</div>
+
+</body>
+</html>
