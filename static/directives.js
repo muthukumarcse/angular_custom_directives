@@ -3,18 +3,20 @@
 var searchApp = angular.module('searchapp', []);
 
 
-// Search data which will be displayed in the UI
-var model = {
 
-	data : [{ sno:1, name:'Muthu', email:'muthu@gmail.com', phone:'9659003535', companyId:'AB-1'},{ sno:2, name:'Kumar', email:'kumar@gmail.com', phone:'879839782', companyId:'AB-1'},{ sno:3, name:'Sam', email:'sam@gmail.com', phone:'987879678', companyId:'AB-1'},{ sno:4, name:'Ram', email:'ram@gmail.com', phone:'9659003535', companyId:'AB-1'},{ sno:5, name:'Arun', email:'arun@gmail.com', phone:'345433223', companyId:'AB-1'}]
-};
 
 // Register a new controller to the searchapp
-searchApp.controller('searchController', ['$scope', function($scope) {
-	$scope.users = model;
+searchApp.controller('searchController', ['$scope', '$http', function($scope, $http) {
+        // http request to get user data.
+	$http.get('data.json').success(function(data)
+		{
+		     console.log(data);
+		     $scope.users = data;
+		});
+	
 }])
 
-// Creating custom directive.
+// Creating simple custom directive.
 searchApp.directive('searchData', function()
 {
 	return {

@@ -1,0 +1,38 @@
+[
+    {
+        "sno": "1",
+        "name": "Muthu",
+        "email": "muthu@gmail.com",
+        "phone": "9659003535",
+        "companyId": "AB-1"
+    },
+
+   {
+        "sno": "2",
+        "name": "Kumar",
+        "email": "kumar@gmail.com",
+        "phone": "8797654343",
+        "companyId": "AB-2"
+    },
+    {
+        "sno": "3",
+        "name": "Arun",
+        "email": "muthu@gmail.com",
+        "phone": "879876553",
+        "companyId": "AB-3"
+    },
+    {
+        "sno": "4",
+        "name": "Sam",
+        "email": "sam@gmail.com",
+        "phone": "9089786572",
+        "companyId": "AB-4"
+    },
+    {
+        "sno": "5",
+        "name": "Anand",
+        "email": "anand@gmail.com",
+        "phone": "9807656672",
+        "companyId": "AB-5"
+    }
+]
